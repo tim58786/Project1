@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新內容|animal planet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{ 
+        margin: 0;
+        font-family: "Noto Sans TC", sans-serif;
+        background-color: rgb(221, 218, 218);
+    }
+    img{
+        width: 30%;
+    }
+    header{ 
+        background-color:rgb(144, 141, 141) ;
+        padding: 6px;
+        
+    }
+    h1{
+        color: black;
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    h3{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    h4{
+        font-size: 30px;
+        text-align: center;
+    }
+    h5{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    
+    a{  
+        text-decoration: none;
+    }
+    .container{ 
+        /* background-color: pink; */
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        }
+        .container::after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+        footer{
+            font-size: 20px;
+            padding: 1px;
+            background-color: rgb(206, 203, 203);
+            width: 119%;
+            text-align: center;
+            left: 20%;
+            margin-left:-300px;
+        }
+        .product{
+            width: 33.333%;
+            /* background-color: lightseagreen; */
+            /* border: 1px solid black; */
+            padding: 40px;
+            top: 200%;
+            position: relative;
+            transform: translate(-50% -50%);
+            
+        }
+        
+        p{
+            font-size: 20px; 
+            color: black;
+            text-align: center;}
+        .float-left{
+            float: left;
+        }
+        .w-100{
+            width: 100%;
+        }
+        .pagetop{
+            position: fixed;
+        display: block;
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        color: white;
+        border-radius: 50%;
+      }
+        .bg-gray{
+        background-color: rgb(199, 196, 196);
+        padding: 20px 0px;
+
+    }
+    .breadcrumb ol{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .breadcrumb ol li{
+        float: left;
+    }
+    .breadcrumb ol li+li::before{
+        content: "\00a0/\00a0";
+    }
+    .breadcrumb a{
+        font-size: 20px;
+        color: gray;
+        text-decoration: none;
+    }
+    .breadcrumb a:hover{
+        color: black;
+    }
+    h1{
+        width: 40%;
+        margin: 0;
+    }
+    .logo{
+        width: 30%;
+    }
+    
+    h1>a{
+        color: rgba(21, 21, 21);
+        text-decoration: none;
+    }
+    nav{
+        width: 60%;
+    }
+    nav>ul{
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+    }
+    nav>ul>li{
+        float: left;
+        width: 25%;
+        
+    }
+    nav>ul>li>a{
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+    }
+    nav>ul>li>a:hover{
+        background-color:rgb(205, 198, 198);
+        color: black;
+    }
+    .social-icon{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .social-icon{
+            /* color: gray; */
+            font-size: 40px;
+            margin-right: 10px;
+        }
+        .icon-facebook{
+            color:#4267B2 ;
+
+        }
+        .icon-instagram{
+            color: #F56040;
+        }
+        .icon-youtube{
+            color: #FF0000;
+        }
+        .icon-line{
+            color: #06C755;
+        }
+        .article{
+            font-size: 20px;
+        }
+        hr.rounded{
+
+            border: 0;
+            height: 6px;
+            background: #174ac1;
+            background-image: linear-gradient(to left, #ccc, #1613bd, #ccc);
+            width: 100%; 
+        }
+        
+        .show{
+            display: none;
+        }
+        .moreButton{
+            font-size: 30px;
+            background-color: rgb(221, 218, 218);
+            cursor: pointer;
+            border: none;
+        }
+        .moreButton:hover{
+
+            color: blue;
+        }
+        .moreButton-1{
+            font-size: 30px;
+            background-color: rgb(221, 218, 218);
+            cursor: pointer;
+            border: none;
+        }
+        .moreButton-2{
+            font-size: 30px;
+            background-color: rgb(221, 218, 218);
+            cursor: pointer;
+            border: none;
+        }
+        .moreButton-1:hover{
+            color: blue;
+        }
+        .moreButton-2:hover{
+            color: blue;
+        }
+        .dropbtn {
+            background-color: rgb(144, 141, 141);
+            color:white;
+            padding: 10px;
+            font-size: 22px;
+            border: none;
+            width: 150px;
+            }
+            .dropbtn a{
+                color: white;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                margin-left: 19px;             /*移動按鈕位置 */
+                margin-top: -5px;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: rgb(63, 63, 63);
+                min-width: 100%;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                font-size: 20px;
+                color: white;
+                padding: 12px 20px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+            
+            .dropdown-content a:hover {
+                background-color:rgb(205, 198, 198);
+                color: black;
+            }
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown:hover .dropbtn {background-color: rgb(205, 198, 198);}
+            .dropbtn a:hover {
+                background-color:rgb(205, 198, 198);
+                color: black;
+            }
+
+            .subbtn input[type="email"]{
+                display: flex;
+                box-sizing: border-box;
+                border: none;
+                height: 52px;
+                padding: 0 25px;
+                width: 70%;
+                background-color: rgb(167, 163, 163);
+                font-size: 32px;
+                margin-top: -40px;
+                margin-left: 100px;
+            }
+            .subbtn input[type="submit"]{
+                display: block;
+                border: none;
+                background-color: rgb(255, 25, 0);
+                 padding: 5px;
+                 width: 200px;
+                 height: 45px;
+                 border-radius: 10px;
+                 margin-bottom: 20px;
+                 color: white;
+                 cursor: pointer;
+                 float: right;
+                 font-size: 22px;
+                 margin-right:46px;
+                 margin-top: -50px;
+                 text-align: center;
+                }
+                .subbtn{
+                    min-width: 1165px;
+                    justify-content: center;
+                }
+                .container article{
+                    font-size: 20px;
+                }
+        
+        
+    
+</style>
+<body>
+  <header>
+    <!-- .container>h1.float-left>a{網站名稱}^nav.float-left>ul>li*4>a{item$} -->
+    <div class="container">
+        <h1 class="float-left"><a href="index.html"><img src="images/animal planet-1.png" alt="zoo" class="logo"></a></h1>
+        <nav class="float-left">
+            <ul>
+                <li><a href="about us.html">關於我們</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="">影音專區</a></button>
+                    <div class="dropdown-content">
+                    <a href="product.html#block4">短片專區</a>
+                    <a href="product.html#block5">長片專區</a>
+                    </div>
+                </div>
+                </li>
+                <li><a href="NEWS.html">最新內容</a></li>
+                <li><a href="contast.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="bg-gray breadcrumb">
+  <div class="container">
+      <ol>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="NEWS.html">最新內容</a></li>
+      </ol>
+  </div>
+</div>
+<h2> <a>最新內容</a></h2>
+<br>
+<h3 id="block1"><a>科莫多巨蜥是單性生殖? 紅帶擬花鮨為了生存竟可變換性別? 探索無奇不有的海洋生態與超強的生存法則 </a></h3>
+<div class="container article">
+    印尼是世界最大的群島國家，在火山與板塊的撞擊下塑造出壯麗的群島景觀，而當中的「科莫多島」也被列為世界新七大自然奇觀，這個與海洋有緊密連結的地方蘊藏著各種奇特物種，為了存活展現出多元求生本能。史前巨獸「科莫多巨蜥」會爬樹也會游泳，攻擊力在島上無人能敵，因應環境還能單性生殖; 為了當領頭魚，「紅帶擬花鮨」可改變自己的性別; 還有滿嘴尖牙的「金鰭鼓氣鱗魨」可一口咬碎珊瑚，物競天擇，適者生存的道理每天都在這裡上演。6月08日是世界海洋日，將無垠無涯的神秘海洋呈現在您面前，探索各種海底生物的演化與生存法則，喚醒大家對於海洋的認識、保護及永續利用。
+    島嶼上最強生物，蜥蜴界的獵殺高手科莫多巨蜥 竟然是單性生殖
+    <span class="dots">...</span>
+    <span class="moreText show" id="more">
+    群島動物都有驚人的樣貌及體型，但島上唯一的霸主，非科莫多巨蜥莫屬，牠是世界上體型最大且有毒的蜥蜴，這個物種的演化，從四千多萬年前就開始了。科莫多巨蜥身體肌肉發達，身上有棘骨的鱗片保護著，看似動作緩慢，其實時速可達20公里，會爬樹也是游泳健將，巨蜥擁有鋸齒狀的牙齒，獵食時嘴巴裡會分泌毒液讓獵物的血液無法凝固，慢慢失血過多而死，如果獵食了體型大的水牛，吃一餐可撐上一個月。除了具備獵殺能力，巨蜥也會為了適應環境發展出單性生殖的能力，未受精的卵只會孵化出公蜥，換言之一隻母巨蜥就能生下整群巨蜥佔據島嶼，強大的生存技能讓科莫多巨蜥始終稱霸這個群島。浩瀚神秘的海底世界，奇特生存能力大較勁。
+
+    這裡還能找到比巨蜥更古老的生物，那就是潛藏在海底世界裡的神秘生物，而牠們又是靠著什麼樣的生存技能活下來呢？群體生活的魚群可有效抵抗掠食者，透明的「玻璃魚」動作靈活，成群結隊可快速逃脫，也可擾亂獵捕者，以為牠們是同一隻動物。「紅帶擬花鮨」的魚群，是由帶頭的公魚帶領眾多母魚一起行動，然而當公魚死了，最老的母魚竟然還可以改變自己的性別，頂替公魚的角色。並非所有魚類都喜歡群體生活，「金鰭鼓氣鱗魨」喜歡獨來獨往，個性兇猛會獵食，長滿尖牙的嘴巴可一口咬碎珊瑚礁，這種魚主要以軟體動物、甲殼類、珊瑚礁跟海葵維生，而鱗魨的魚肉本身還有毒。大自然的生存法則每天在這裡上演著，探索生物的演化。
+    <br>
+    <iframe width="1000" height="550" src="https://www.youtube.com/embed/DFEzwjKB3Vo?si=SaouAh-zISXmjous" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </span>
+    <button class="moreButton">閱讀更多</button>
+    <br><br><br><br><br><br>
+    
+</div>
+<hr class="rounded">
+    <br><br>
+    <h4 id="block2">澳洲國寶無尾熊一天抱樹長達20小時 原來是在「納涼」 地球清道夫非「牠」莫屬 胃酸竟比車用電池還強！介紹動物界冷知識</h4>
+    <div class="container article">
+        澳洲山火持續蔓延，破壞大批野生動物的家園，就連澳洲國寶無尾熊也受到迫害，無尾熊媽媽為了保護親兒，更是不惜擁著幼熊以身擋火，令人為之動容，也顛覆了我們對「無尾熊」總是抱著樹幹呼呼大睡的印象…。不過，到底尤加利樹中暗藏了甚麼魔力，能讓無尾熊對它情有獨鍾、一天緊抱近20小時呢？而專吃動物屍體、腐肉，有草原清道夫之稱的「禿鷲」，為何從未食物中毒或感染疾病呢？以趣味方式介紹更多動物界的新奇冷知識。
+        <br>
+        無尾熊一天20小時緊抱樹幹 原來是在「納涼」。
+        <span class="dots-1">...</span>
+        <span class="moreText-1 show" id="more">
+        可愛又慵懶的無尾熊，一天的睡眠時間竟高達20個小時，而且睡覺的時候總是抱著「尤加利樹」這個大抱枕，難道是尤加利樹中有甚麼催眠的成分，讓無尾熊對它們無抗拒能力？其實無尾熊身體汗腺構造跟狗狗一樣，只有舌頭能散熱，而澳洲的氣候甚至能高達攝氏46度，且水資源在此又相當匱乏，所以牠們抱著尤加利樹這可愛行徑，其實最主要是為了「散熱」，樹木當中的水蒸氣蒸發相較於空氣中慢，尤加利樹的根又能更深地吸收冰涼的地下水，對無尾熊而言，尤加利樹就是一個天然「大冰棒」，為消暑的最佳首選！
+        <br>
+        地球清道夫非「牠」莫屬 胃酸竟比車用電池還強
+
+        有自然界的清道夫之稱的動物禿鷲，牠們以「腐肉」為食，不管動物是生什麼病死的牠們都能通通吃下肚，而究竟禿鷲為甚麼能對疾病免疫，並不被病毒感染呢？秘密就是內臟裡藏著「化工廠」，禿鷲的胃酸是所有動物裡面最酸的，甚至比車用電池的酸液還酸，腐蝕性非常強，不但能溶解骨頭還能溶解金屬，也能消滅要命的疾病病毒，如：狂犬病,霍亂等等，若地球上沒有牠們將病死的動物屍體吃掉，危險的細菌會在屍體上滋生讓其他動物受到感染。因此「禿鷲」對環境是不可缺少的，是地球的終極清道夫！
+        
+        <iframe width="1000" height="550" src="https://www.youtube.com/embed/mVfWeVrilbE?si=HeU5EwzMsfQfba7O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </span>
+    <button class="moreButton-1">閱讀更多</button>
+    </div>
+    <br><br><br><br><br><br>
+    <hr class="rounded">
+    <br>
+    <h5 id="block3">勇闖活火山 決不｢龜」縮！ 本世紀生態學上重大突破！ 首度尋獲費南迪納巨陸龜 全球最後1隻！滅絕百年謎團終破解。</h5>
+    <div class="container article">
+        根據聯合國今年五月發布具有指標意義的自然生態評估報告指出，人類正在加速破壞大自然，百萬種動物與植物面臨滅絕，當中許多將在數十年內絕種，生物消失的速度增快數百倍，令人深感震驚。而每年，全球有約兩千個物種因多年未見蹤影而被宣告滅絕，動物星球頻道《滅絕動物大追蹤》的專家們不放棄希望，要帶領觀眾們跟著大自然所留下的線索，重新尋找消失已久的傳奇生物。而節目主持人野生生物學家佛瑞斯特葛蘭特（Forrest Galante）及攝影團隊碶而不捨地登上費南迪納島尋找下，百年來未見過的雌性費南迪納巨陸龜竟然再度現身！
+        這個令人振奮的消息將改變整個陸龜進化史的發展，並成為本世紀生態學上的重要突破。一同揭開生態謎團的神秘真相！
+        <span class="dots-2">...</span>
+        <span class="moreText-2 show" id="more">
+        <br>
+        睽違112年費南迪納巨陸龜現蹤影
+        被宣布滅絕、消失了112年的費南迪納巨陸龜近日在加拉巴哥群島中最年輕、火山噴發最活躍的費南迪納島上被重新發現，這個令人振奮的消息將改變整個陸龜進化史的發展，並成為本世紀生態學上的重要突破！由20座火山島組成的加拉巴哥群島向來被視為達爾文演化論的靈感來源地，每座島上的生物都是獨立演化，目前已辨別出有15種加拉巴哥陸龜，現今只剩下11種巨陸龜。費南迪納巨陸龜以牠居住的島嶼命名，這種陸龜唯一的紀錄是 1906 年科學考察團留下的，在這一百多年來，都沒有人再看過這傳奇陸龜的真面目。封印之島保留滅絕動物新希望
+
+        野生生物學家佛瑞斯特葛蘭特（Forrest Galante）始終堅信費南迪納巨陸龜從未真正消失，終於在跟隨達爾文腳步踏上有「人間地獄」之稱的加拉巴哥群島探索，排除萬難登上費南迪納島，冒著遭受火山波及的危險，越過熔岩流，尋找島上獨有的巨陸龜，數日後破解這沈睡超過一世紀的謎團，發現了百年來未見過的雌性費南迪納巨陸龜。佛瑞斯特葛蘭將這次的發現視為畢生最傲人的成就，他表示「就像平塔島象龜孤獨喬治是滅絕的警訊一樣，我相信費南迪納巨陸龜能成為尋找滅絕野生動物的新曙光，她是全世界最稀有的烏龜，也是這世紀來全世界在加拉巴哥群島上最大的發現之一。」
+        <br>
+        史上唯一費南迪納巨陸龜活體樣本
+
+        世上僅存的費南迪納巨陸龜，這位百歲烏龜奶奶的出現為復育帶來一線生機，為了避免火山再度爆發淹沒棲息地，科學家們細心將目前偏瘦弱的她帶回保育中心照顧，未來也預計再度回到原地尋找可以配對繁殖的公陸龜；同時科學家也在費南迪納巨陸龜身上置入晶片標記、取得血液樣本，這是有紀錄以來人類首度取得活體樣本進行科學研究，希望從中發現巨陸龜的演化的基因秘密。
+        <iframe width="1000" height="550" src="https://www.youtube.com/embed/qWJr9ujyZFc?si=dmou_DU5tf7RFSkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </span>
+    <button class="moreButton-2">閱讀更多</button>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="container">
+        <h4>訂閱動物星球電子報</h4>
+        <br>
+        <div class="subbtn">
+            <form>
+                <input type="email" id="email" name="email" placeholder="請輸入Email" required>
+            <input  id="subBtn" type="submit" value="立即訂閱">
+
+            </form>
+        </div>
+    </div>  
+
+
+    
+   
+  <a href="#" class="pagetop">top</a>
+    <footer>
+      <div class="container">
+        <p>copyright &copy; 版權所有. All rights reserved.2024</p>
+    </div>
+    <div class="container social-icon">
+        <a class="icon-facebook" href="https://www.facebook.com/AnimalPlanetTaiwan/?locale=zh_TW" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="icon-instagram" href="https://www.instagram.com/animalplanet.tw/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="icon-youtube" href="https://www.youtube.com/channel/UCypzlOdJyyOR2NhKv0o3zig" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    </footer>
+    <script>
+          const moreButton = document.querySelector('.moreButton')
+    moreButton.addEventListener('click', function(){
+        document.querySelector('.moreText').classList.toggle('show')
+        document.querySelector('.moreButton').classList.toggle('show')
+        document.querySelector('.dots').classList.toggle('show')
+    })
+    const moreButton1= document.querySelector('.moreButton-1')
+    moreButton1.addEventListener('click', function(){
+        document.querySelector('.moreText-1').classList.toggle('show')
+        document.querySelector('.moreButton-1').classList.toggle('show')
+        document.querySelector('.dots-1').classList.toggle('show')
+    })
+    const moreButton2= document.querySelector('.moreButton-2')
+    moreButton2.addEventListener('click', function(){
+        document.querySelector('.moreText-2').classList.toggle('show')
+        document.querySelector('.moreButton-2').classList.toggle('show')
+        document.querySelector('.dots-2').classList.toggle('show')
+    })
+    </script>
+</body>
+</html>
